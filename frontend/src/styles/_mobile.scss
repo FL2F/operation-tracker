@@ -1,0 +1,120 @@
+@media (max-width: 951px) {
+  .body-container {
+    .userSelect {
+      width: 100%;
+      padding: 0 2rem;
+    }
+    .content {
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .trait-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .body-container {
+    padding: 1rem;
+    .dashboard-heading {
+      margin: 0;
+    }
+    .schedule-form {
+      width: unset;
+
+      .form {
+        width: unset;
+        #username,
+        #password {
+          margin: 0;
+        }
+      }
+    }
+
+    .userSelect {
+      align-items: center;
+    }
+
+    .content {
+      .members {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          width: 100%;
+          text-align: center;
+        }
+
+        button {
+          width: 100%;
+          text-align: center;
+        }
+
+        .calendar-body {
+          display: flex;
+          justify-content: space-between;
+        }
+        .delete {
+          max-width: 5rem;
+          div {
+            text-align: right;
+          }
+        }
+      }
+      .btn {
+        width: unset;
+        height: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .body-container {
+    .heading {
+      h2 {
+        margin: 1rem 0;
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .content {
+      padding: 1rem;
+    }
+  }
+
+  .btn-add {
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .appContainer {
+    .header {
+      .container {
+        padding: 0;
+        padding: 1rem;
+
+        .nav-items {
+          .nav-item {
+            margin: 0 2px;
+          }
+        }
+      }
+    }
+    .body-container {
+      .userSelect {
+        padding: 0 1rem;
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

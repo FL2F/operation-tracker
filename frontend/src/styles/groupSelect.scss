@@ -1,0 +1,55 @@
+@import "./variables";
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80%;
+  margin: 2rem 0 -1rem;
+
+  label {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  input {
+    width: 15rem;
+  }
+}
+
+.colors {
+  width: 100%;
+  margin-top: 1.5rem;
+  @include flex-center();
+
+  div {
+    @include flex-center();
+    margin-right: 10px;
+
+    .box {
+      width: 1rem;
+      height: 1rem;
+
+      &.green {
+        background-color: $third-color;
+      }
+
+      &.blue {
+        background-color: $secondary-color;
+      }
+
+      &.lightBlue {
+        background-color: $primary-color;
+      }
+
+      &.incomplete {
+        background-color: $red;
+      }
+    }
+  }
+}

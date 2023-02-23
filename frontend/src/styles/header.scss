@@ -1,0 +1,47 @@
+@import "./variables";
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: $black;
+  &:hover {
+    color: rgb(70, 68, 68);
+  }
+}
+
+.header {
+  // background: $primary-color;
+  width: 100%;
+  .container {
+    @include flex-between();
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1400px;
+    height: 70px;
+
+    .nav-items {
+      @include flex-center();
+
+      .nav-item {
+        margin: 0 5px;
+        cursor: pointer;
+        &.logout {
+          color: $black;
+        }
+        &:hover {
+          color: rgb(70, 68, 68);
+        }
+      }
+    }
+  }
+}

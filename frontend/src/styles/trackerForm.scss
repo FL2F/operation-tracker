@@ -1,0 +1,41 @@
+.tracker-form {
+  transition: all 0.3 ease-in-out;
+  &.disabled {
+    display: none;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+
+    label,
+    input {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    input {
+      width: unset;
+      margin-top: 0;
+    }
+
+    &.btn-group {
+      flex-direction: column;
+
+      button {
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+
+      .email-form {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  button {
+    margin: 0 auto;
+  }
+}
